@@ -1,0 +1,34 @@
+  
+<html>
+  <meta charset="UTF-8">
+  <style>
+    *{
+      text-align: center;
+      background-color: #00989A;
+      color: white;
+      }
+    a{
+      font-size: 30px;
+      }
+    .videofeed{
+        display: block;
+        margin-left: 18%;
+        margin-right: auto;
+        width: 50%;
+      }
+    
+  </style>
+  <head>
+    
+    <title>กล้องดูผัก</title>
+  </head>
+  <body>
+    <a href="http://192.168.1.4/index1.php">back</a>
+    <h1><u>กล้องดูผัก</u></h1>
+    <div class = videofeed>
+    <img src="{{ url_for('video_feed') }}">
+  	<!-- <h1>{{ url_for('video_feed') }}</h1> --><b>
+    </div>
+
+  </body>
+</html>
