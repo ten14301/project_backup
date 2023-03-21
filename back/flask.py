@@ -1,4 +1,4 @@
-from flask import Flask, Response, render_template
+from website.flask import Flask, Response, render_template
 import cv2
 
 app = Flask(__name__, template_folder='templates')
@@ -30,6 +30,7 @@ def video_feed():
     
     return Response(get_frame(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+#change what you want
 if __name__ == '__main__':
     app.run(host='192.168.1.2', debug=True, threaded=True)
     
